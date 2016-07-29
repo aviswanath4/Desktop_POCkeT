@@ -1,26 +1,26 @@
-function varargout = English_Cervix_Clinic_KENYATTA(varargin)
-% English_Cervix_Clinic_KENYATTA MATLAB code for English_Cervix_Clinic_KENYATTA.fig
-%      English_Cervix_Clinic_KENYATTA, by itself, creates a new English_Cervix_Clinic_KENYATTA or raises the existing
+function varargout = English_Cervix_Clinic_Ganjoni(varargin)
+% English_Cervix_Clinic_Ganjoni MATLAB code for English_Cervix_Clinic_Ganjoni.fig
+%      English_Cervix_Clinic_Ganjoni, by itself, creates a new English_Cervix_Clinic_Ganjoni or raises the existing
 %      singleton*.
 %
-%      H = English_Cervix_Clinic_KENYATTA returns the handle to a new English_Cervix_Clinic_KENYATTA or the handle to
+%      H = English_Cervix_Clinic_Ganjoni returns the handle to a new English_Cervix_Clinic_Ganjoni or the handle to
 %      the existing singleton*.
 %
-%      English_Cervix_Clinic_KENYATTA('CALLBACK',hObject,eventData,handles,...) calls the local
-%      function named CALLBACK in English_Cervix_Clinic_KENYATTA.M with the given input arguments.
+%      English_Cervix_Clinic_Ganjoni('CALLBACK',hObject,eventData,handles,...) calls the local
+%      function named CALLBACK in English_Cervix_Clinic_Ganjoni.M with the given input arguments.
 %
-%      English_Cervix_Clinic_KENYATTA('Property','Value',...) creates a new English_Cervix_Clinic_KENYATTA or raises the
+%      English_Cervix_Clinic_Ganjoni('Property','Value',...) creates a new English_Cervix_Clinic_Ganjoni or raises the
 %      existing singleton*.  Starting from the left, property value pairs are
-%      applied to the GUI before English_Cervix_Clinic_KENYATTA_OpeningFcn gets called.  An
+%      applied to the GUI before English_Cervix_Clinic_Ganjoni_OpeningFcn gets called.  An
 %      unrecognized property name or invalid value makes property application
-%      stop.  All inputs are passed to English_Cervix_Clinic_KENYATTA_OpeningFcn via varargin.
+%      stop.  All inputs are passed to English_Cervix_Clinic_Ganjoni_OpeningFcn via varargin.
 %
 %      *See GUI Options on GUIDE's Tools menu.  Choose "GUI allows only one
 %      instance to run (singleton)".
 %
 % See also: GUIDE, GUIDATA, GUIHANDLES
 
-% Edit the above text to modify the response to help English_Cervix_Clinic_KENYATTA
+% Edit the above text to modify the response to help English_Cervix_Clinic_Ganjoni
 
 % Last Modified by GUIDE v2.5 21-Dec-2015 16:15:33
 
@@ -28,8 +28,8 @@ function varargout = English_Cervix_Clinic_KENYATTA(varargin)
 gui_Singleton = 1;
 gui_State = struct('gui_Name',       mfilename, ...
                    'gui_Singleton',  gui_Singleton, ...
-                   'gui_OpeningFcn', @English_Cervix_Clinic_KENYATTA_OpeningFcn, ...
-                   'gui_OutputFcn',  @English_Cervix_Clinic_KENYATTA_OutputFcn, ...
+                   'gui_OpeningFcn', @English_Cervix_Clinic_Ganjoni_OpeningFcn, ...
+                   'gui_OutputFcn',  @English_Cervix_Clinic_Ganjoni_OutputFcn, ...
                    'gui_LayoutFcn',  [] , ...
                    'gui_Callback',   []);
 if nargin && ischar(varargin{1})
@@ -44,13 +44,13 @@ end
 % End initialization code - DO NOT EDIT
 
 
-% --- Executes just before English_Cervix_Clinic_KENYATTA is made visible.
-function English_Cervix_Clinic_KENYATTA_OpeningFcn(hObject, eventdata, handles, varargin)
+% --- Executes just before English_Cervix_Clinic_Ganjoni is made visible.
+function English_Cervix_Clinic_Ganjoni_OpeningFcn(hObject, eventdata, handles, varargin)
 % This function has hormone_no output args, see OutputFcn.
 % hObject    handle to figure
 % eventdata  reserved - to be defined in a future version of MATLAB
 % handles    structure with handles and user data (see GUIDATA)
-% varargin   command line arguments to English_Cervix_Clinic_KENYATTA (see VARARGIN)
+% varargin   command line arguments to English_Cervix_Clinic_Ganjoni (see VARARGIN)
 
 %For if patientID is used more than once
 global first numTimesPressed;
@@ -58,7 +58,7 @@ global first numTimesPressed;
 first = 1;
 numTimesPressed = 1; 
 
-% Choose default command line output for English_Cervix_Clinic_KENYATTA
+% Choose default command line output for English_Cervix_Clinic_Ganjoni
 handles.output = hObject;
 %insert logos
 duke = imread('duke.PNG'); 
@@ -67,8 +67,8 @@ axes(handles.duke)
 imshow(duke); 
 
 % Change this line of code if you want to change folder the matlab files are saved in
- %cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\DO_NOT_TOUCH')
-cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\DO_NOT_TOUCH\')
+ %cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\DO_NOT_TOUCH')
+cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\DO_NOT_TOUCH\')
 set(handles.whitelight, 'UserData', 0);
 set(handles.greenlight, 'UserData', 0);
 set(handles.Lugols, 'UserData', 0);
@@ -76,12 +76,12 @@ set(handles.Lugols, 'UserData', 0);
 % Update handles structure
 guidata(hObject, handles);
 
-% UIWAIT makes English_Cervix_Clinic_KENYATTA wait for user response (see UIRESUME)
+% UIWAIT makes English_Cervix_Clinic_Ganjoni wait for user response (see UIRESUME)
 % uiwait(handles.figure1);
 
 
 % --- Outputs from this function are returned to the command line.
-function varargout = English_Cervix_Clinic_KENYATTA_OutputFcn(hObject, eventdata, handles) 
+function varargout = English_Cervix_Clinic_Ganjoni_OutputFcn(hObject, eventdata, handles) 
 % varargout  cell array for returning output args (see VARARGOUT);
 % hObject    handle to figure
 % eventdata  reserved - to be defined in a future version of MATLAB
@@ -145,7 +145,7 @@ function startvid_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 % Change this line of code if you want to change folder the matlab files are saved in
-cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\DO_NOT_TOUCH\')
+cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\DO_NOT_TOUCH\')
 
 %export to excel files
 % procval=get(handles.procedure,'Value');
@@ -226,22 +226,22 @@ switch val
          uiwait(warndlg(warningMessage));
          return; % Get out and don't process any further.
     case 2
-        type1 = 'KENYATTA-L0%1.0f-';
+        type1 = 'Ganjoni-L0%1.0f-';
         type1 = strcat(type1, STRYEAR);
         Filename=sprintf(type1,ID);
     case 3
-        type2= 'KENYATTA-C0%1.0f-';
+        type2= 'Ganjoni-C0%1.0f-';
         type2 = strcat(type2, STRYEAR);
         Filename=sprintf(type2,ID);
     case 4
-        type3= 'KENYATTA-T0%1.0f-';
+        type3= 'Ganjoni-T0%1.0f-';
         type3 = strcat(type3, STRYEAR);
         Filename=sprintf(type3,ID);    
 end
 
 
-Pathname='C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\';
-%Pathname='C:\Users\Cervix Laptop 8\DesktopDropbox\Images from Kenyatta Clinic\' ;
+Pathname='C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\';
+%Pathname='C:\Users\Cervix Laptop 8\DesktopDropbox\Images from Ganjoni Clinic\' ;
 fullpathname=strcat(Pathname,Filename);
 
 if((exist(fullpathname, 'file') == 7) && (numTimesPressed == 1))
@@ -306,7 +306,7 @@ for i = 1:3
     im = getsnapshot(vid);
     axes(handles.image)
     %imshow(im); 
-    imwrite(im,[num2str(counter),'White_PCGen2_AA_WD_35mm_KENYATTA-',patientType,'0',num2str(patientID),'-',num2str(i),'noComp300dpi','.tif'],'Compression','none','Resolution',300);
+    imwrite(im,[num2str(counter),'White_PCGen2_AA_WD_35mm_Ganjoni-',patientType,'0',num2str(patientID),'-',num2str(i),'noComp300dpi','.tif'],'Compression','none','Resolution',300);
 end
 
 % 
@@ -321,8 +321,8 @@ assignin('base','effectiveFrameRate_WAA',effectiveFrameRate_WAA)
 % 
 
 % Change this line of code if you want to change folder the matlab files are saved in
- %cd('C:\Users\Cervix Laptop 8\DesktopDropbox\Images from Kenyatta Clinic\DO_NOT_TOUCH\')
-cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\DO_NOT_TOUCH\')
+ %cd('C:\Users\Cervix Laptop 8\DesktopDropbox\Images from Ganjoni Clinic\DO_NOT_TOUCH\')
+cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\DO_NOT_TOUCH\')
 h=msgbox('White Light Image Capture Completed');
 
 guidata(hObject,handles)
@@ -369,22 +369,22 @@ switch val
          uiwait(warndlg(warningMessage));
          return; % Get out and don't process any further.
     case 2
-        type1 = 'KENYATTA-L0%1.0f-';
+        type1 = 'Ganjoni-L0%1.0f-';
         type1 = strcat(type1, STRYEAR);
         Filename=sprintf(type1,ID);
     case 3
-        type2= 'KENYATTA-C0%1.0f-';
+        type2= 'Ganjoni-C0%1.0f-';
         type2 = strcat(type2, STRYEAR);
         Filename=sprintf(type2,ID);
     case 4
-        type3= 'KENYATTA-T0%1.0f-';
+        type3= 'Ganjoni-T0%1.0f-';
         type3 = strcat(type3, STRYEAR);
         Filename=sprintf(type3,ID);    
 end
 
 
-Pathname='C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\';
-%Pathname='C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\' ;
+Pathname='C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\';
+%Pathname='C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\' ;
 fullpathname=strcat(Pathname,Filename);
 
 if((exist(fullpathname, 'file') == 7) && (numTimesPressed == 1))
@@ -448,7 +448,7 @@ for i = 1:3
     im = getsnapshot(vid); 
     axes(handles.image)
     %imshow(im); 
-    imwrite(im,[num2str(counter),'Green_PCGen2_AA_WD_35mm_KENYATTA-',patientType,'0',num2str(patientID),'-',num2str(i),'noComp300dpi','.tif'],'Compression','none','Resolution',300);
+    imwrite(im,[num2str(counter),'Green_PCGen2_AA_WD_35mm_Ganjoni-',patientType,'0',num2str(patientID),'-',num2str(i),'noComp300dpi','.tif'],'Compression','none','Resolution',300);
 end
  
  %imshow(im);
@@ -468,8 +468,8 @@ assignin('base','effectiveFrameRate_GAA',effectiveFrameRate_GAA)
 % effectiveFrameRate0 = 1/timePerFrame0;
 
 % Change this line of code if you want to change folder the matlab files are saved in
- %%cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\DO_NOT_TOUCH\')
- cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\DO_NOT_TOUCH\')
+ %%cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\DO_NOT_TOUCH\')
+ cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\DO_NOT_TOUCH\')
  h=msgbox('Green Light Image Capture Completed');
 guidata(hObject,handles)
 
@@ -482,8 +482,8 @@ function New_Callback(hObject, eventdata, handles)
 % handles    structure with handles and user data (see GUIDATA)
 
 % Change this line of code if you want to change folder the matlab files are saved in
-%cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\DO_NOT_TOUCH\')
-cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\DO_NOT_TOUCH\')
+%cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\DO_NOT_TOUCH\')
+cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\DO_NOT_TOUCH\')
 
 global numTimesPressed first;
 
@@ -568,22 +568,22 @@ switch val
          uiwait(warndlg(warningMessage));
          return; % Get out and don't process any further.
     case 2
-        type1 = 'KENYATTA-L0%1.0f-';
+        type1 = 'Ganjoni-L0%1.0f-';
         type1 = strcat(type1, STRYEAR);
         Filename=sprintf(type1,ID);
     case 3
-        type2= 'KENYATTA-C0%1.0f-';
+        type2= 'Ganjoni-C0%1.0f-';
         type2 = strcat(type2, STRYEAR);
         Filename=sprintf(type2,ID);
     case 4
-        type3= 'KENYATTA-T0%1.0f-';
+        type3= 'Ganjoni-T0%1.0f-';
         type3 = strcat(type3, STRYEAR);
         Filename=sprintf(type3,ID);    
 end
 
 
-Pathname='C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\';
-%Pathname='C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\' ;
+Pathname='C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\';
+%Pathname='C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\' ;
 fullpathname=strcat(Pathname,Filename);
 
 if((exist(fullpathname, 'file') == 7) && (numTimesPressed == 1))
@@ -645,7 +645,7 @@ for i = 1:3
     im = getsnapshot(vid); 
     axes(handles.image)
     %imshow(im); 
-    imwrite(im,[num2str(counter),'Lugols_PCGen2_WD_35mm_KENYATTA-',patientType,'0',num2str(patientID),'-',num2str(i),'noComp300dpi','.tif'],'Compression','none','Resolution',300);
+    imwrite(im,[num2str(counter),'Lugols_PCGen2_WD_35mm_Ganjoni-',patientType,'0',num2str(patientID),'-',num2str(i),'noComp300dpi','.tif'],'Compression','none','Resolution',300);
 end
 %toc
 %imshow(im);
@@ -664,8 +664,8 @@ assignin('base','effectiveFrameRate_WLI',effectiveFrameRate_WLI)
 % effectiveFrameRate0 = 1/timePerFrame0;
 
 % Change this line of code if you want to change folder the matlab files are saved in
- %cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\DO_NOT_TOUCH')
- cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Kenyatta Clinic\DO_NOT_TOUCH\')
+ %cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\DO_NOT_TOUCH')
+ cd('C:\Users\Cervix Laptop 8\Desktop\Dropbox\Images from Ganjoni Clinic\DO_NOT_TOUCH\')
 
 
  h=msgbox('Lugols Image Capture Completed');
